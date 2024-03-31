@@ -17,6 +17,9 @@ The dataset utilized for this project was obtained from Kaggle, accessible throu
 - Machine Learning and Deep Learning Algorithms:
     - Artificial Neural Network (ANN)
     - Convolution Neural Network (CNN)
+    - OpenCV
+    - Sobel Edge Detection
+    - Canny-Edge Detection
  
 
 - Programming Language:
@@ -76,8 +79,6 @@ The provided code executes the following tasks:
   - Implements early stopping and model checkpoint callbacks during the training process.
 
 
-
-
 3. Grayscale with Edge Detection CNNConcreteCrackIdentification
 
 The provided code accomplishes the following tasks:
@@ -125,14 +126,12 @@ The following figures and table show confusion matrices for best models from eac
 <img src = "images/GrayScaleImages.png">
 
 
-<img src = "images/AccuracyComparison.png">
 
 
-
-#<p align="center">
-  #<img src="images/AccuracyComparison.png" /><br>
-  #<em>Grayscale Images</em>
-#</p>
+<p align="center">
+  <img src="images/AccuracyComparison.png" /><br>
+  <em>Accuracy of all Models</em>
+</p>
 
 
 
@@ -142,14 +141,19 @@ Upon comparing the accuracy scores of various models, it becomes apparent that u
 
 Application of the Sobel edge detection trained model to external images and videos yielded the following outcomes:
 
-. First Scenerio:   * Six images were used, cropped from images of concrete cylinders used as compressive strength samples, were employed, comprising 3 images with cracks present and 3 without.
-                    * The Sobel edge detection trained model  accurately predicted all 6 images.
+* First Scenerio:  
+        * Six images were used, cropped from images of concrete cylinders used as compressive strength samples, were employed, comprising 3 images with cracks present and 3 without.
+
+        * The Sobel edge detection trained model  accurately predicted all 6 images.
 
 
 <img src = "images/ImageCrackDetection.png">               
   
-* Second Scenerio:  * Four short video clips, cropped from videos of sidewalk pathways, were utilized, consisting of 2 videos with cracks present and 2 without.
-                    * The model correctly predicted both videos without cracks and 1 of the videos with cracks present.
+* Second Scenerio:
+  
+        * Four short video clips, cropped from videos of sidewalk pathways, were utilized, consisting of 2 videos with cracks present and 2 without.
+  
+        * The model correctly predicted both videos without cracks and 1 of the videos with cracks present.
 
 <img src = "images/VideoCrackDetection.png">
 
