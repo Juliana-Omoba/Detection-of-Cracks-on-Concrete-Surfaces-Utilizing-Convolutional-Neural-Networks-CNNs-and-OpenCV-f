@@ -126,8 +126,27 @@ The following figures and table show confusion matrices for best models from eac
 <img src = "images/GrayScaleImages.png">
 
 
-Comparing the various model's accuracy scores, it is evident that using grayscale or sobel-edgedetection provide optimum results. Since many of the applications of a model like this would be to identify cracks that need to be addressed, we will make the assumption that it is of more benefit to increase the number of correctly identified cracks, even if this means an increase of falsely identified cracks. For this reason, we will select the Sobel-EdgeDetection model as the optimum model in this project.
-Applying the Sobel-EdgeDetection trained model to some external images and videos resulted in the following:
+<img src = "images/AccuracyComparison.png">
+
+<p align="center">
+  <img src="images/AccuracyComparison.png" /><br>
+  <em>Grayscale Images</em>
+</p>
+
+
+
+
+
+Upon comparing the accuracy scores of various models, it becomes apparent that utilizing grayscale or Sobel edge detection yields optimal results. Given that the primary application of such a model is to identify cracks requiring attention, prioritizing the accurate identification of cracks, even at the expense of falsely identified cracks, is deemed beneficial. Consequently, the Sobel edge detection model is selected as the optimal model for this project.
+
+Application of the Sobel edge detection trained model to external images and videos yielded the following outcomes:
+
+Six images, cropped from images of concrete cylinders used as compressive strength samples, were employed, comprising 3 images with cracks present and 3 without. 
+The model accurately predicted all 6 images.
+Four short video clips, cropped from videos of sidewalk pathways, were utilized, consisting of 2 videos with cracks present and 2 without. 
+The model correctly predicted both videos without cracks and 1 of the videos with cracks present.
+
+
 •
 Six images were used (these images are cropped from images taken of concrete cylinders used as compressive strength samples), 3 with cracks present and 3 without.
 •
