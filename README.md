@@ -120,10 +120,10 @@ The provided code facilitates concrete crack classification utilizing a trained 
 ### Results/Findings
 The following figures and table show confusion matrices for best models from each explored processing method and comparison of their accuracy scores:
 
-<img src = "AI-Based Employee Promotion Prediction/Images/RandomForest.png">
-<img src = "AI-Based Employee Promotion Prediction/Images/RandomForest.png">
-<img src = "AI-Based Employee Promotion Prediction/Images/RandomForest.png">
-<img src = "AI-Based Employee Promotion Prediction/Images/RandomForest.png">
+<img src = "images/ColorImages.png">
+<img src = "images/GrayScaleImages.png">
+<img src = "images/SobelEdgeDetectionImages.png">
+<img src = "images/GrayScaleImages.png">
 
 
 Comparing the various model's accuracy scores, it is evident that using grayscale or sobel-edgedetection provide optimum results. Since many of the applications of a model like this would be to identify cracks that need to be addressed, we will make the assumption that it is of more benefit to increase the number of correctly identified cracks, even if this means an increase of falsely identified cracks. For this reason, we will select the Sobel-EdgeDetection model as the optimum model in this project.
