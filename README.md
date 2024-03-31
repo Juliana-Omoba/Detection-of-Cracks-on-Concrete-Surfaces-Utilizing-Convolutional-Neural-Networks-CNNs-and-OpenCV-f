@@ -31,7 +31,6 @@ Load Images without Cracks
   #Split into train/test
   #normalize data scaling values from 0-1
 
-
 ### Methods
 
 The methodology adopted to construct a proficient predictive model in this project involved a progressive refinement process, commencing with rudimentary processing techniques and a CNN architecture, subsequently iterated to enhance performance. Initially, optimization was pursued utilizing color images, followed by a transition to grayscale images, culminating in the integration of edge detection methodologies.
@@ -128,10 +127,12 @@ The following figures and table show confusion matrices for best models from eac
 
 <img src = "images/AccuracyComparison.png">
 
-<p align="center">
-  <img src="images/AccuracyComparison.png" /><br>
-  <em>Grayscale Images</em>
-</p>
+
+
+#<p align="center">
+  #<img src="images/AccuracyComparison.png" /><br>
+  #<em>Grayscale Images</em>
+#</p>
 
 
 
@@ -145,17 +146,17 @@ Application of the Sobel edge detection trained model to external images and vid
                     * The Sobel edge detection trained model  accurately predicted all 6 images.
 
 
-   Image here                 
+<img src = "images/ImageCrackDetection.png">               
   
 * Second Scenerio:  * Four short video clips, cropped from videos of sidewalk pathways, were utilized, consisting of 2 videos with cracks present and 2 without.
                     * The model correctly predicted both videos without cracks and 1 of the videos with cracks present.
 
-image here
+<img src = "images/VideoCrackDetection.png">
 
 
 After an exhaustive exploration of various methodologies, the optimal model emerged as a Convolutional Neural Network (CNN) architecture featuring four convolutional layers and two connected layers, leveraging Sobel-Edge Detection images as input shown below. This meticulously developed model exhibits superior performance characteristics compared to alternative configurations.
 
-image here
+<img src = "images/CNNarchitecture.png">
 
 Subsequently, a dedicated function was engineered to facilitate the application of the predictive model. This function operates by accepting inputs in the form of single or multiple images/videos, and subsequently furnishes predictions regarding the presence or absence of detected cracks with a high degree of accuracy and reliability.
 
