@@ -141,10 +141,11 @@ Upon comparing the accuracy scores of various models, it becomes apparent that u
 
 Application of the Sobel edge detection trained model to external images and videos yielded the following outcomes:
 
-Six images, cropped from images of concrete cylinders used as compressive strength samples, were employed, comprising 3 images with cracks present and 3 without. 
-The model accurately predicted all 6 images.
-Four short video clips, cropped from videos of sidewalk pathways, were utilized, consisting of 2 videos with cracks present and 2 without. 
-The model correctly predicted both videos without cracks and 1 of the videos with cracks present.
+. First Scenerio:   * Six images were used, cropped from images of concrete cylinders used as compressive strength samples, were employed, comprising 3 images with cracks present and 3 without.
+                    * The Sobel edge detection trained model  accurately predicted all 6 images.
+  
+. Second Scenerio:  * Four short video clips, cropped from videos of sidewalk pathways, were utilized, consisting of 2 videos with cracks present and 2 without.
+                    * The model correctly predicted both videos without cracks and 1 of the videos with cracks present.
 
 
 •
@@ -155,3 +156,9 @@ Of the six images, the model predicted all 6 correctly as seen in Figure 5.
 Four short video clips were used (these videos are cropped from videos taken of sidewalk pathways), 2 with cracks present and 2 without.
 •
 Of the four videos, the model correctly predicted both videos without cracks and 1 of the videos with cracks present as seen in Figure 6.
+
+
+
+
+
+
