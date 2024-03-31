@@ -1,0 +1,9 @@
+.idea
+__pycache__
+nltk_data
+
+# Don't commit .env file. Use .env.local as a template and then set your env vars for your local only so that
+# credentials do not get committed to github.
+.env
+training_data
+dependencies
