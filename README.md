@@ -117,7 +117,7 @@ The provided code facilitates concrete crack classification utilizing a trained 
   - This comprehensive approach enables seamless classification of concrete cracks across diverse input formats, offering flexibility and adaptability for real-world applications.
 
 
-### Results/Findings
+### Results/Findings/Discussion
 The following figures and table show confusion matrices for best models from each explored processing method and comparison of their accuracy scores:
 
 <img src = "images/ColorImages.png">
@@ -143,19 +143,54 @@ Application of the Sobel edge detection trained model to external images and vid
 
 . First Scenerio:   * Six images were used, cropped from images of concrete cylinders used as compressive strength samples, were employed, comprising 3 images with cracks present and 3 without.
                     * The Sobel edge detection trained model  accurately predicted all 6 images.
+
+
+   Image here                 
   
-. Second Scenerio:  * Four short video clips, cropped from videos of sidewalk pathways, were utilized, consisting of 2 videos with cracks present and 2 without.
+* Second Scenerio:  * Four short video clips, cropped from videos of sidewalk pathways, were utilized, consisting of 2 videos with cracks present and 2 without.
                     * The model correctly predicted both videos without cracks and 1 of the videos with cracks present.
 
+image here
 
-•
-Six images were used (these images are cropped from images taken of concrete cylinders used as compressive strength samples), 3 with cracks present and 3 without.
-•
-Of the six images, the model predicted all 6 correctly as seen in Figure 5.
-•
-Four short video clips were used (these videos are cropped from videos taken of sidewalk pathways), 2 with cracks present and 2 without.
-•
-Of the four videos, the model correctly predicted both videos without cracks and 1 of the videos with cracks present as seen in Figure 6.
+
+After an exhaustive exploration of various methodologies, the optimal model emerged as a Convolutional Neural Network (CNN) architecture featuring four convolutional layers and two connected layers, leveraging Sobel-Edge Detection images as input shown below. This meticulously developed model exhibits superior performance characteristics compared to alternative configurations.
+
+image here
+
+Subsequently, a dedicated function was engineered to facilitate the application of the predictive model. This function operates by accepting inputs in the form of single or multiple images/videos, and subsequently furnishes predictions regarding the presence or absence of detected cracks with a high degree of accuracy and reliability.
+
+
+### Recommendations
+
+
+In order to further enhance the predictive capabilities of the model, several avenues for future improvement have been identified. These include:
+
+1. Exploration of Additional Preprocessing Techniques and Advanced Architectures: Investigating alternative preprocessing methods and sophisticated neural network architectures could potentially yield improvements in model performance. This may involve experimenting with different edge detection algorithms, image enhancement techniques, or incorporating advanced CNN architectures tailored to the task at hand.
+   
+2. Utilization of Pretrained Models such as Inception V3 and ResNet: Leveraging pretrained models, such as Inception V3 or ResNet, offers an avenue for enhancing model accuracy and efficiency. By fine-tuning these models on the specific task of crack detection, we can capitalize on the rich feature representations learned from large-scale datasets.
+   
+3. Extension of Application to Recognize Specific Types of Defects: Extending the application scope to encompass the recognition of various types of defects beyond cracks presents an opportunity for broader utility. By training the model to identify specific defect patterns or anomalies, we can enhance its versatility and applicability across diverse scenarios, such as identifying spalling, delamination, or corrosion in addition to cracks.
+
+These avenues for future work hold promise for further advancing the model's performance and applicability, paving the way for more robust and effective defect detection systems in infrastructural and industrial settings.
+
+
+
+### Conclusion
+
+* In conclusion, the "Surface Crack Detection using OpenCV and CNN" project successfully tackled the pressing need for an automated system to identify surface cracks in diverse infrastructural and industrial environments. By leveraging OpenCV and Convolutional Neural Networks (CNN), the project introduced a more accurate, timely, and proactive approach to crack detection.
+  
+* Exploration of various processing methods revealed that the Sobel-EdgeDetection model and grayscale images achieved optimum performance, each boasting an impressive accuracy of 99.74%. Prioritizing the accurate identification of cracks, even with a slight increase in false positives, was deemed crucial for practical applications.
+
+* Application of the Sobel-EdgeDetection model to external images and videos showcased its effectiveness in identifying cracks across different scenarios. The predictive model, based on a CNN architecture with 4 convolutional layers and 2 connected layers, demonstrated its applicability in real-world situations.
+
+* While the project achieved significant success, there are opportunities for future exploration and enhancement. Further research could focus on advanced preprocessing techniques, integration of pretrained models, and extension of the application to recognize specific types of defects in diverse scenarios. Additionally, scaling the model to accommodate larger image sizes could enhance its effectiveness in practical settings.
+
+* Overall, the "Surface Crack Detection using OpenCV and CNN" project represents a substantial advancement in structural health monitoring, offering a potent tool for the early detection and proactive maintenance of surface cracks in critical infrastructures.
+
+
+
+
+
 
 
 
